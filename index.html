@@ -3,64 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>내 포트폴리오</title>
+    <title>개발자 및 스트리머 밀크찬</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="description" content="안녕하세요. 치지직, 유튜브 및 디스코드에서 활동 하고 있는 ‘밀크찬’ 이라고 합니다.">
+    <meta name="keywords" content="밀크찬, milkchan, milkchan128, @milkchan128, 치지직 밀크찬, 밀쿠찬, 바보밀크찬, 밀크찬 자숙">
+    
+    <link rel="shortcut icon" type="image/x-icon" href="profile.png" />
+    <meta property="og:title" content="개발자 및 스트리머 밀크찬">
+    <meta property="og:description" content="안녕하세요. 치지직, 유튜브 및 디스코드에서 활동 하고 있는 ‘밀크찬’ 이라고 합니다.">
+    <meta property="og:image" content="profile.png">
+    <meta property="og:type" content="website">
+    <script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <div id="click-animation"></div>
     <header>
-        <div class="container">
-            <h1>내 포트폴리오</h1>
-            <a href="https://github.com/milkchan128" target="_blank" class="github-btn">GitHub</a>
+        <div class="nickname">
+            <h1 id="nickname">@milkchan128</h1>
         </div>
+        <nav>
+            <ul>
+                <li><a href="#about"><i class="fas fa-user"></i> 소개</a></li>
+                <li><a href="#skills"><i class="fas fa-code"></i> 언어</a></li>
+                <li><a href="#projects"><i class="fas fa-project-diagram"></i> 프로젝트</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> 문의</a></li>
+                <li><a href="https://github.com/milkchan128"><i class="fa-brands fa-github"></i> 깃허브</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main class="container">
-        <section id="personal-info">
-            <h2>개인 정보</h2>
-            <p><strong>이름:</strong> 신주호</p>
-            <p><strong>이메일:</strong> contact@milkchan.xyz</p>
-            <p><strong>위치:</strong> 경기도, 대한민국</p>
-            <p><strong>소개:</strong> 웹사이트 개발 및 프로그램, 마인크래프트 플러그인 개발자 입니다. 프로그램을 사용하는 사용자들의 편리성과 사용환경을 위해 최선을 다합니다.</p>
+    <main>
+        <section id="about">
+            <h2><i class="fas fa-user"></i> 밀크찬에 대한 소개</h2>
+            <p>개발자, 웹디자이너를 꿈꾸고있는 의정부고등학교에서 배우고있는 18살 밀크찬(신주호) 입니다.</p>
         </section>
 
         <section id="skills">
-            <h2>스킬</h2>
-            <ul class="skill-list">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Python</li>
-                <li>Java-Gradle</li>
-            </ul>
-        </section>
-
-        <section id="education">
-            <h2>교육</h2>
-            <p><strong>초등학교: </strong>녹양초등학교 [2015 ~ 2020]</p>
-            <p><strong>중학교: </strong>녹양중학교 [2021 ~ 2023]</p>
-            <p><strong>고등학교: </strong>의정부고등학교 [2024 ~ ]</p>
-            <p><strong>졸업 예정: </strong>2026년</p>
+            <h2><i class="fas fa-code"></i> 사용할수 있는 언어</h2>
+            <div class="skill-bar">
+                <div class="skill" data-skill="C#">
+                    <div class="skill-fill csharp-fill"></div>
+                    <span class="skill-name">C#</span>
+                    <span class="skill-percent"></span>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <div class="skill" data-skill="Java">
+                    <div class="skill-fill java-fill"></div>
+                    <span class="skill-name">Java</span>
+                    <span class="skill-percent"></span>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <div class="skill" data-skill="Python">
+                    <div class="skill-fill python-fill"></div>
+                    <span class="skill-name">html+css</span>
+                    <span class="skill-percent"></span>
+                </div>
+            </div>
         </section>
 
         <section id="projects">
-            <div class="project">
-                <img src="https://mc-cdn.xyz/a.png?height=200&width=300" alt="프로젝트 1 이미지">
-                <h3>mosin_tools</h3>
-                <p>모신툴은 윈도우 pc 유저들의 초기화를 편리하게 해주는 프로그램입니다.<br>설치하고 싶은 프로그램만 선택할수 있습니다.</p>
+            <h2><i class="fas fa-project-diagram"></i> 프로젝트</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3><i class="fas fa-code-branch"></i> 도시능력자 서버팩</h3>
+                    <p>추억의 도시능력자를 서버팩 형식으로 변경해 배포하고 있습니다.</p><br>
+                    <a href="https://github.com/milkchan128" class="contact-button github"><i class="fas fa-tv"></i> 깃허브 바로가기</a>
+                </div>
+                <div class="project-card">
+                    <h3><i class="fas fa-code-branch"></i> 밀크찬 API</h3>
+                    <p>PVP ON/OFF 기능과 없는명령어 메시지를 커스텀하는 기능을 가진 플러그인</p><br>
+                    <a href="https://github.com/milkchan128" class="contact-button github"><i class="fas fa-tv"></i> 깃허브 바로가기</a>
+                </div>
+                <div class="project-card">
+                    <h3><i class="fas fa-code-branch"></i> 모신툴즈</h3>
+                    <p>초기화를 자주하는 사용자들을 위한 자동 패키지 다운로드 프로그램</p><br>
+                    <a href="https://github.com/milkchan128" class="contact-button github"><i class="fas fa-tv"></i> 깃허브 바로가기</a>
+                </div>
             </div>
-            <div class="project">
-                <img src="https://mc-cdn.xyz/a.png?height=200&width=300" alt="프로젝트 2 이미지">
-                <h3>milkchan-api 1.0</h3>
-                <p>밀크찬 API입니다. 마크서버의 보안 수준을 올리고 편리한 기능을 제공합니다.</p>
+        </section>
+
+        <section id="contact">
+            <h2><i class="fas fa-envelope"></i> 문의</h2>
+            <div class="contact-buttons">
+                <a href="https://discord.millkchan.xyz" class="contact-button discord"><i class="fab fa-discord"></i> Join Discord</a>
+                <a href="https://chzzk.milkchan.xyz" class="contact-button chzzk"><i class="fas fa-tv"></i> Visit Chzzk Channel</a>
+                <a href="https://youtube.milkchan.xyz" class="contact-button youtube"><i class="fab fa-youtube"></i> Visit YouTube Channel</a>
             </div>
         </section>
     </main>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2025 밀크찬. All rights reserved.</p>
-        </div>
+        <p>&copy; 2023 Developer Portfolio. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
-
